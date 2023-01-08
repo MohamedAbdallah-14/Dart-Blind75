@@ -1,9 +1,9 @@
 import 'package:blind75/array_and_hashing/valid_sudoku/valid_sudoku.dart';
-import 'package:blind75/utils/duration_extention.dart';
+import 'package:blind75/utils/run_timed_code.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('Hashing Test', () {
+  group('Valid Sudoku Test', () {
     test('Case 1', () {
       // Arrange
       final board = [
@@ -18,11 +18,7 @@ void main() {
         [".", ".", ".", ".", "8", ".", ".", "7", "9"]
       ];
       //Act
-      final stopwatch = Stopwatch()..start();
-      final output = isValidSudoku(board);
-      print(
-        'executed in ${stopwatch.elapsed.toHumanReadableString()}',
-      );
+      final output = runTimedCode(() => isValidSudoku(board));
       // Assert
       expect(output, true);
     });
@@ -41,11 +37,7 @@ void main() {
         [".", ".", ".", ".", "8", ".", ".", "7", "9"]
       ];
       //Act
-      final stopwatch = Stopwatch()..start();
-      final output = isValidSudoku(board);
-      print(
-        'executed in ${stopwatch.elapsed.toHumanReadableString()}',
-      );
+      final output = runTimedCode(() => isValidSudoku(board));
       // Assert
       expect(output, false);
     });
