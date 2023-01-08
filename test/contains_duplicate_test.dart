@@ -1,4 +1,5 @@
 import 'package:blind75/contains_duplicate/contains_duplicate.dart';
+import 'package:blind75/utils/duration_extention.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -10,7 +11,7 @@ void main() {
       final stopwatch = Stopwatch()..start();
       final output = containsDuplicate(nums);
       print(
-        'executed in ${stopwatch.elapsed.inMilliseconds} Milliseconds + ${stopwatch.elapsed.inMicroseconds} Microseconds',
+        'executed in ${stopwatch.elapsed.toHumanReadableString()}',
       );
       // Assert
       expect(output, true);
@@ -22,7 +23,7 @@ void main() {
       final stopwatch = Stopwatch()..start();
       final output = containsDuplicate(nums);
       print(
-        'executed in ${stopwatch.elapsed.inMilliseconds} Milliseconds + ${stopwatch.elapsed.inMicroseconds} Microseconds',
+        'executed in ${stopwatch.elapsed.toHumanReadableString()}',
       );
       // Assert
       expect(output, false);
@@ -34,7 +35,7 @@ void main() {
       final stopwatch = Stopwatch()..start();
       final output = containsDuplicate(nums);
       print(
-        'executed in ${stopwatch.elapsed.inMilliseconds} Milliseconds + ${stopwatch.elapsed.inMicroseconds} Microseconds',
+        'executed in ${stopwatch.elapsed.toHumanReadableString()}',
       );
       // Assert
       expect(output, true);
