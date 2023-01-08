@@ -1,4 +1,4 @@
-import 'package:blind75/contains_duplicate/contains_duplicate.dart';
+import 'package:blind75/array_and_hashing/contains_duplicate/contains_duplicate.dart';
 import 'package:blind75/utils/duration_extention.dart';
 import 'package:test/test.dart';
 

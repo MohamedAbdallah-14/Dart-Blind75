@@ -1,4 +1,4 @@
-import 'package:blind75/product_of_array_except_self/product_of_array_except_self.dart';
+import 'package:blind75/array_and_hashing/product_of_array_except_self/product_of_array_except_self.dart';
 import 'package:blind75/utils/duration_extention.dart';
 import 'package:test/test.dart';
 
